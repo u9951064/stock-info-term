@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Josh Tsai Stock Info Backup</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<h1>Josh Tsai Stock Info Backup</h1>
+<p><strong>Josh Tsai Stock Info Backup</strong> is a personal, non-commercial backup tool operated by Josh Tsai.
+It runs on a single private server and automatically copies the operator's own Taiwan stock market research
+database to the operator's own Google Drive account.</p>
+
+<h2>What the app does</h2>
+<ul>
+<li>After each Taiwan Stock Exchange trading day, a scheduled job creates a snapshot of a local research database
+(publicly available market data such as daily prices and institutional trading volumes).</li>
+<li>The snapshot is compressed and uploaded to a folder named <code>stock-info-backup</code> in the operator's Google Drive.</li>
+<li>Only the five most recent daily backups are kept; older backup folders created by the app are deleted.</li>
+</ul>
+
+<h2>How it uses Google Drive</h2>
+<p>The app requests only the <code>https://www.googleapis.com/auth/drive.file</code> scope. This lets it see,
+create and delete <em>only the files and folders it created itself</em>. It cannot read, list or modify any other file
+in the Google Drive account.</p>
+
+<h2>Who can use it</h2>
+<p>The app is used solely by its operator for their own account. It is not offered to the public,
+and no third-party users' data is collected.</p>
+
+<p>See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+<footer>Josh Tsai Stock Info Backup · Contact: <a href="mailto:u9951064@gmail.com">u9951064@gmail.com</a></footer>
+</body></html>
